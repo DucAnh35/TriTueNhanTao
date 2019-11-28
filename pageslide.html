@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Anton|Archivo+Narrow|Bebas+Neue|Francois+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="b-menu" id="myDIV">
+      <ul class="list-menu">
+        <li class="sub-menu">
+          <a href="home.html" target="showtarget" class="link active">Trang Chủ</a>
+        </li>
+        <li class="sub-menu">
+          <a href="slide1.html" target="showtarget" class="link">Học TA cùng con</a>
+        </li>
+        <li class="sub-menu">
+          <a href="slide2.html" target="showtarget" class="link">Chơi trò chơi TA</a>
+        </li>
+        <li class="sub-menu">
+          <a href="slide3.html" target="showtarget" class="link">Luyện hát TA</a>
+        </li>
+        <li class="sub-menu">
+          <a href="silde4.html" target="showtarget" class="link">Kênh Youtube học TA</a>
+        </li>
+        <li class="sub-menu">
+          <a href="slide5.html" target="showtarget" class="link">Truyện TA</a>
+        </li>
+        <li class="sub-menu">
+          <a href="slide6.html" target="showtarget" class="link">Trung Tâm TA tại Đà Nẵng</a>
+        </li>
+      </ul>
+    </div>
+    <div class="b-content">
+      <iframe class="content-text" src="home.html" name="showtarget"></iframe>
+    </div>
+    <div class="b-footer">
+      <p>Copyright @ 2019</p>
+    </div>
+  </div>
+  <script>
+    // Add active class to the current button (highlight it)
+    var header = document.getElementById("myDIV");
+    var btns = header.getElementsByClassName("link");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+      });
+    }
+    </script>
+</body>
+</html>
