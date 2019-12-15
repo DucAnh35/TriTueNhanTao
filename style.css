@@ -240,3 +240,37 @@ ul.list-menu {
   margin-left: auto;
   margin-right: auto;
 }
+.page-wrapper{
+  padding: 0 50px;
+}
+.page-wrapper .headding-page{
+  border-bottom: 1px solid #ccc;
+}
+.page-wrapper .content-page {
+  padding-top: 20px;
+}
+.page-wrapper .content-page .b-image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.b-image-1{
+  width: 600px;
+  height: 402px;
+}
+.content-menu {
+  padding-top: 15px;
+}
+.content-menu .list-menu .item-menu{
+  list-style-type: none;
+}
+.content-menu .list-menu .item-menu .link-href{
+  text-decoration: none;
+  color: blue;
+}
+.content-menu .list-menu .item-menu .link-href:hover{
+  color: red;
+}
+.b-question{
+  margin: 5px 0 0;
+}
