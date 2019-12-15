@@ -10,11 +10,11 @@ body{
   background-image: linear-gradient(to right, #C2E4FC, #E2EDF5);
 } */
 /* .title-page{
-  background-color: red;
+  background-color: #000;
 } */
  
 .b-menu{
-  background-color: #EFEFEF;
+  background-color: #2F70DC;
   box-shadow: 0 -6px 32px rgba(0, 0, 0, 0.2);
 }
 ul.list-menu {
@@ -23,6 +23,7 @@ ul.list-menu {
 .b-menu .list-menu{
   display: flex;
   flex-wrap: nowrap;
+  padding: 0;
 }
 .b-menu .list-menu .sub-menu {
   list-style-type: none;
@@ -30,17 +31,16 @@ ul.list-menu {
   padding: 20px 10px;
   text-decoration: none;
   /* margin: 20px; */
-  font-family: 'Francois One', sans-serif;
-
+  font-family: 'Gelasio', serif;
 }
-.b-menu .list-menu .sub-menu:nth-child(-n+6){
+.b-menu .list-menu .sub-menu:nth-child(-n+7){
   border-right: 1px solid #ccc;
 }
 .link{
   text-decoration: none;
   font-size: 18px;
-  color: #3F65FC;
-  font-weight: bold;
+  color: #ffffff;
+  font-weight: 500;
   margin: 0 20px;
 }
 .active, .link:hover{
@@ -71,12 +71,16 @@ ul.list-menu {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
+}
+.image:hover{
+  transform: scale(1.5);
 }
 .content-slide2{
   padding: 0 50px;
 }
 .content-slide2 .title-game{
-  color: #FF0000;
+  color: #000;
   font-size: 25px;
 }
 .content-game .text-game .text-bold{
@@ -96,7 +100,7 @@ ul.list-menu {
 }
 .content-music .name-music{
   font-size: 25px;
-  color: #FF0000;
+  color: #000;
 }
 .content-music .text-music{
   line-height: 29px;
@@ -111,7 +115,7 @@ ul.list-menu {
 }
 .content-youtu .name-youtu{
   font-size: 20px;
-  color: red;
+  color: #000;
 }
 .content-youtu .content-text{
   font-size: 17px;
@@ -128,7 +132,7 @@ ul.list-menu {
 }
 .content-story .title-story{
   font-size: 20px;
-  color: red;
+  color: #000;
 }
 .content-story .text-norm{
   font-size: 17px;
@@ -171,7 +175,7 @@ ul.list-menu {
 }
 .list-center .title-item{
   font-size: 19px;
-  color: red;
+  color: #000;
 }
 .list-center .contact-item{
   font-size: 18px;
@@ -186,19 +190,27 @@ ul.list-menu {
   padding: 0 50px;
 }
 .page-home .title-header{
-  position: relative;
+  letter-spacing: 1px;
+  font-size: 35px;
+  overflow: hidden;
+  background: linear-gradient(45deg, #000579, #ccc, #000579);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  margin-bottom: 30px;
   text-align: center;
-  color: #20A850;
-  font-size: 40px;
   text-transform: uppercase;
-  text-shadow: 
-  1px 0px 1px #ccc, 0px 1px 1px #eee, 
-  2px 1px 1px #ccc, 1px 2px 1px #eee,
-  3px 2px 1px #ccc, 2px 3px 1px #eee,
-  4px 3px 1px #ccc, 3px 4px 1px #eee,
-  5px 4px 1px #ccc, 4px 5px 1px #eee,
-  6px 5px 1px #ccc, 5px 6px 1px #eee,
-  7px 6px 1px #ccc;
+  
+}
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
 }
 .page-home .b-content-home{
   padding-top: 20px;  
@@ -215,11 +227,16 @@ ul.list-menu {
 }
 .home-title{
   font-size: 25px;
-  color: #FF0000;
+  color: #000;
 }
 .list-content .home-text{
   font-size: 20px;
 }
 .list-content .list-item li{
   line-height: 29px;
+}
+.list-center img.b-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
